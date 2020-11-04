@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- the head shows what the tab name will be and the title -->
+<head>
+    <meta charset="UTF-8">
+    <title>Alien Eyewitness Reports</title><p>UFO Sightings</p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.4.1/superhero/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <form>
+                    <div class="form-group">
+                        <label for="eyewitness-form">Filter Alien reports by Column</label>
+                        <input class="form-control" id="eyewitness-form-input" name="eyewitness-form" type="text"
+                            placeholder="AB-">
+                    </div>
+                    <button id="button" type="button" class="btn btn-primary">Enter a Date</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <h1>UFO Sightings Summary</h1>
+                 <p>Aliens are they REAL!</p>
+                <table class="table table-striped table-dark text-center summary">
+                    <thead>
+                        <tr>
+                            <th>datetime</th>
+                            <th>city</th>
+                            <th>state</th>
+                            <th>country</th>
+                            <th>shape</th>
+                            <th>durationMinutes</th>
+                            <th>comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <body>
+                            <div class="container">
+                                <table class="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <!-- <data.forEach(datetime" -->
+                                            <td>datetime: "1/1/2010</td>
+                                            <td>city: "benton" </td>
+                                            <td>state</td>
+                                            <td>country</td>
+                                            <td>shape</td>
+                                            <td>durationMinutes</td>
+                                            <td>comments</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+      <script src="static/js/data.js"></script>
+      <script src="static/js/index.js"></script>
+
+</body>
+
+</html>
