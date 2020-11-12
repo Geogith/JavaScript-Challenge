@@ -15,23 +15,45 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-12">
 
                 <form id='filterform'>
                     <div class="form-group">
-                        <label for="date_filter">Filter Alien reports by Column</label>
-                        <input class="form-control" id="date_filter",  name="date_filter" type="date" min="2010-01-01"
+                        <ul class = "multiplecolumns">
+                            <li class = "filter">
+                        <label for="date_filter">Filter Alien reports by Date</label>
+                        <input class="form-control" id="date",  name="date_filter" type="date" min="2010-01-01"
                             max="2010-01-13" />
+                            </li>
 
-                        <!-- <label for="city_filter">Filter Alien reports by Column</label>
-                        <input class="form-control" id="city_filter" , name="city_filter" type="text" /> -->
+                            <li>
+                        <label for="city_filter">Filter Alien reports by City</label>
+                        <input class="form-control" id="city", name="city_filter" type="text" placeholder="benton"/>
+                            </li>
 
+                            <li>
+                        <label for="state_filter">Filter Alien reports by State</label>
+                        <input class="form-control" id="state", name="state_filter" type="text" placeholder="ar"/>
+                            </li>
+
+                            <li>
+                        <label for="country_filter">Filter Alien reports by Country</label>
+                        <input class="form-control" id="country", name="country_filter" type="text" placeholder="us"/>
+                            </li>
+
+                            <li>
+                        <label for="shape_filter">Filter Alien reports by Shape</label>
+                        <input class="form-control" id="shape", name="shape_filter" type="text" placeholder="circle"/>
+                            </li>
+                        </ul>
                     </div>
-
                     <button id="button" type="button" class="btn btn-primary">Filter</button>
                 </form>
             </div>
+
         </div>
+
+    </div>
 
         <div class="row">
             <div class="col-md-12">
@@ -39,6 +61,7 @@
                 <h1>UFO Sightings</h1>
                 <p>Aliens are they REAL!</p>
                 <table class="table table-striped table-dark text-center summary">
+
                     <thead>
                         <tr>
                             <th>datetime</th>
